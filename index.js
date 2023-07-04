@@ -31,7 +31,8 @@ try {
             }
 
             core.info('JSON checked.')
-            core.setOutput("successfully", `Successfully created json on ${fullPath} directory with ${fileContent} data`);
+            core.setOutput("successfully", `Successfully created json on ${fullPath}`);
+            core.setOutput("fullPath", fullPath);
         }
     });
 } catch (err) {
